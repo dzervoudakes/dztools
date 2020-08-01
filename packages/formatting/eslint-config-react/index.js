@@ -11,16 +11,13 @@ module.exports = {
   extends: [
     'airbnb',
     'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/eslint-recommended',
     'plugin:jest/recommended',
     'plugin:jsx-a11y/recommended',
     'plugin:react/recommended',
     'plugin:prettier/recommended',
-    'prettier/react',
-    'prettier/@typescript-eslint'
+    'prettier/react'
   ],
-  parser: '@typescript-eslint/parser',
+  parser: 'babel-eslint',
   parserOptions: {
     ecmaVersion: 9,
     sourceType: 'module',
@@ -28,19 +25,9 @@ module.exports = {
       jsx: true
     }
   },
-  plugins: [
-    '@typescript-eslint',
-    'react',
-    'import',
-    'jsx-a11y',
-    'react-hooks',
-    'prettier'
-  ],
+  plugins: ['react', 'import', 'jsx-a11y', 'react-hooks', 'prettier'],
+  root: true,
   rules: {
-    // TypeScript rules
-    '@typescript-eslint/explicit-function-return-type': ERROR,
-    '@typescript-eslint/no-unused-vars': ERROR,
-
     // standard rules
     'class-methods-use-this': OFF,
     'comma-dangle': [ERROR, 'never'],
@@ -52,6 +39,7 @@ module.exports = {
     'no-console': WARN,
     'no-param-reassign': ERROR,
     'no-plusplus': [ERROR, { allowForLoopAfterthoughts: true }],
+    'no-undef': ERROR,
     'no-unused-vars': ERROR,
     'no-var': ERROR,
     'prefer-const': ERROR,
@@ -66,21 +54,7 @@ module.exports = {
       'always',
       {
         js: 'never',
-        jsx: 'never',
-        ts: 'never',
-        tsx: 'never'
-      }
-    ],
-    'import/no-extraneous-dependencies': [
-      ERROR,
-      {
-        devDependencies: [
-          'build/**',
-          'jest/**',
-          'scripts/**',
-          '**/*.test.*',
-          '**/*.spec.*'
-        ]
+        jsx: 'never'
       }
     ],
     'import/no-dynamic-require': OFF,
@@ -98,13 +72,12 @@ module.exports = {
     'react/jsx-closing-bracket-location': [ERROR, 'line-aligned'],
     'react/jsx-curly-brace-presence': [ERROR, 'never'],
     'react/jsx-curly-spacing': [ERROR, { when: 'never', children: true }],
-    'react/jsx-filename-extension': [ERROR, { extensions: ['.jsx', '.tsx'] }],
+    'react/jsx-filename-extension': ERROR,
     'react/jsx-props-no-spreading': OFF,
     'react/no-array-index-key': ERROR,
     'react/no-unused-prop-types': ERROR,
     'react/no-unused-state': ERROR,
     'react/prefer-stateless-function': ERROR,
-    'react/prop-types': OFF,
     'react/require-default-props': OFF,
     'react/sort-comp': ERROR,
     'react/static-property-placement': OFF,

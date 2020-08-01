@@ -1,0 +1,43 @@
+{
+  "name": "@dztools/stylelint-config",
+  "version": "1.0.0",
+  "description": "Base StyleLint configuration.",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dzervoudakes/dztools.git"
+  },
+  "homepage": "https://github.com/dzervoudakes/dztools/formatting/stylelint-config",
+  "author": "dzervoudakes",
+  "license": "MIT",
+  "main": "index.js",
+  "keywords": [
+    "prettier",
+    "stylelint"
+  ],
+  "scripts": {
+    "lint": "eslint . --ext js",
+    "lint:fix": "npm run lint -- --fix",
+    "prepublishOnly": "npm run lint"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "3.7.1",
+    "@typescript-eslint/parser": "3.7.1",
+    "babel-eslint": "10.1.0",
+    "eslint": "7.6.0",
+    "eslint-config-airbnb": "18.2.0",
+    "eslint-config-airbnb-base": "14.2.0",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-plugin-import": "2.22.0",
+    "eslint-plugin-jest": "23.20.0",
+    "eslint-plugin-jsx-a11y": "6.3.1",
+    "eslint-plugin-prettier": "3.1.4",
+    "eslint-plugin-react": "7.20.5",
+    "eslint-plugin-react-hooks": "4.0.8",
+    "prettier": "2.0.5",
+    "stylelint": "13.6.1",
+    "stylelint-config-prettier": "8.0.2",
+    "stylelint-config-standard": "20.0.0",
+    "stylelint-order": "4.1.0",
+    "stylelint-prettier": "1.1.2"
+  }
+}

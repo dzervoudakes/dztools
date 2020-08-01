@@ -11,22 +11,17 @@ module.exports = {
   extends: [
     'airbnb-base',
     'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/eslint-recommended',
     'plugin:jest/recommended',
     'plugin:prettier/recommended'
   ],
-  parser: '@typescript-eslint/parser',
+  plugins: ['import', 'prettier'],
+  parser: 'babel-eslint',
   parserOptions: {
     ecmaVersion: 9,
     sourceType: 'module'
   },
-  plugins: ['import', 'prettier'],
+  root: true,
   rules: {
-    // TypeScript rules
-    '@typescript-eslint/explicit-function-return-type': ERROR,
-    '@typescript-eslint/no-unused-vars': ERROR,
-
     // standard rules
     'class-methods-use-this': OFF,
     'comma-dangle': [ERROR, 'never'],

@@ -1,0 +1,34 @@
+{
+  "name": "@dztools/eslint-config-typescript",
+  "version": "1.0.0",
+  "description": "TypeScript ESLint configuration.",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dzervoudakes/dztools.git"
+  },
+  "homepage": "https://github.com/dzervoudakes/dztools/formatting/eslint-config-typescript",
+  "author": "dzervoudakes",
+  "license": "MIT",
+  "main": "index.js",
+  "keywords": [
+    "eslint",
+    "prettier",
+    "typescript"
+  ],
+  "scripts": {
+    "lint": "eslint . --ext js",
+    "lint:fix": "npm run lint -- --fix",
+    "prepublishOnly": "npm run lint"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "3.7.1",
+    "@typescript-eslint/parser": "3.7.1",
+    "eslint": "7.6.0",
+    "eslint-config-airbnb-base": "14.2.0",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-plugin-import": "2.22.0",
+    "eslint-plugin-jest": "23.20.0",
+    "eslint-plugin-prettier": "3.1.4",
+    "prettier": "2.0.5"
+  }
+}
