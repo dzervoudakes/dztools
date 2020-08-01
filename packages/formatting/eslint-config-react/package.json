@@ -1,7 +1,7 @@
 {
   "name": "@dztools/eslint-config-react",
   "version": "1.0.0",
-  "description": "React ESLint configuration.",
+  "description": "ESLint configuration for React + JavaScript applications.",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/dzervoudakes/dztools.git"

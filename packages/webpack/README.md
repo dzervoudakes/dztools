@@ -2,4 +2,4 @@
 
 > Shared Webpack configurations.
 
-_More TBD_
+Explore each package within this directory for relevant information regarding dependencies and usage.

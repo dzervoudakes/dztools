@@ -1,7 +1,7 @@
 {
   "name": "@dztools/prettier-config",
   "version": "1.0.0",
-  "description": "Base Prettier configuration.",
+  "description": "Base configuration for Prettier runtime config.",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/dzervoudakes/dztools.git"

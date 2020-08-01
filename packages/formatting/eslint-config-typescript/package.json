@@ -1,7 +1,7 @@
 {
   "name": "@dztools/eslint-config-typescript",
   "version": "1.0.0",
-  "description": "TypeScript ESLint configuration.",
+  "description": "Base ESLint configuration for TypeScript applications.",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/dzervoudakes/dztools.git"
