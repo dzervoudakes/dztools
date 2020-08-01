@@ -17,6 +17,10 @@
     "react",
     "typescript"
   ],
+  "scripts": {
+    "lint": "eslint . --ext js",
+    "lint:fix": "npm run lint -- --fix"
+  },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "3.7.1",
     "@typescript-eslint/parser": "3.7.1",
