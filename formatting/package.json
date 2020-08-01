@@ -19,7 +19,8 @@
   ],
   "scripts": {
     "lint": "eslint . --ext js",
-    "lint:fix": "npm run lint -- --fix"
+    "lint:fix": "npm run lint -- --fix",
+    "prepublishOnly": "npm run lint"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "3.7.1",
