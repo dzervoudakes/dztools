@@ -12,7 +12,9 @@
   "main": "index.js",
   "keywords": [
     "babel",
+    "config",
     "eslint",
+    "javascript",
     "prettier",
     "react"
   ],
