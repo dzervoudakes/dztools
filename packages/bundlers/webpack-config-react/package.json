@@ -1,0 +1,44 @@
+{
+  "name": "@dztools/webpack-config-react",
+  "version": "1.0.0",
+  "description": "Webpack base, dev, and prod configurations for React + JavaScript templates.",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dzervoudakes/dztools.git"
+  },
+  "homepage": "https://github.com/dzervoudakes/dztools/tree/master/packages/bundlers/webpack-config-react",
+  "author": "dzervoudakes",
+  "license": "MIT",
+  "main": "index.js",
+  "keywords": [
+    "config",
+    "javascript",
+    "react",
+    "webpack"
+  ],
+  "scripts": {
+    "lint": "eslint . --ext js",
+    "lint:fix": "npm run lint -- --fix",
+    "prepublishOnly": "npm run lint"
+  },
+  "dependencies": {
+    "case-sensitive-paths-webpack-plugin": "2.3.0",
+    "clean-webpack-plugin": "3.0.0",
+    "friendly-errors-webpack-plugin": "1.7.0",
+    "hard-source-webpack-plugin": "0.13.1",
+    "html-webpack-plugin": "4.3.0",
+    "mini-css-extract-plugin": "0.9.0",
+    "optimize-css-assets-webpack-plugin": "5.0.3",
+    "path": "0.12.7",
+    "react-dev-utils": "10.2.1",
+    "terser-webpack-plugin": "3.0.8",
+    "webpack": "4.44.1",
+    "webpack-bundle-analyzer": "3.8.0"
+  },
+  "devDependencies": {
+    "eslint": "7.6.0",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-plugin-prettier": "3.1.4",
+    "prettier": "2.0.5"
+  }
+}

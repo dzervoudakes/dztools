@@ -7,7 +7,7 @@
 
 ## Thought Process
 
-Over time, I've developed several frontend applications which tend to share the same code formatting, lint configurations, webpack configurations, etc.
+Over time, I've developed several frontend applications which tend to share the same code formatting, lint configurations, Webpack configurations, etc.
 In an effort to ensure consistency and scalability, I've decided to create a shared single source of truth for the aforementioned configurations.
 
 ## Available Configurations
