@@ -6,7 +6,7 @@
     "type": "git",
     "url": "git+ssh://git@github.com/dzervoudakes/dztools.git"
   },
-  "homepage": "https://github.com/dzervoudakes/dztools/tree/master/packages/formatting/stylelint-config",
+  "homepage": "https://github.com/dzervoudakes/dztools/tree/master/packages/formatting/stylelint-config#readme",
   "author": "dzervoudakes",
   "license": "MIT",
   "main": "index.js",

@@ -6,7 +6,7 @@
     "type": "git",
     "url": "git+ssh://git@github.com/dzervoudakes/dztools.git"
   },
-  "homepage": "https://github.com/dzervoudakes/dztools/tree/master/packages/bundlers/webpack-config-react",
+  "homepage": "https://github.com/dzervoudakes/dztools/tree/master/packages/bundlers/webpack-config-react#readme",
   "author": "dzervoudakes",
   "license": "MIT",
   "main": "index.js",
