@@ -1,4 +1,4 @@
-# dztools | formatting | eslint-config-typescript | Changelog
+# @dztools/eslint-config-typescript | Changelog
 
 ## v1.0.1
 

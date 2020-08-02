@@ -1,4 +1,4 @@
-# dztools/formatting/eslint-config-base
+# @dztools/eslint-config-base
 
 > Base ESLint configuration for JavaScript applications.
 

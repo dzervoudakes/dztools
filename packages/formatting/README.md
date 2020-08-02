@@ -1,4 +1,4 @@
-# dztools/formatting
+# @dztools/formatting
 
 > Shared configurations for ESLint, StyleLint, and Prettier.
 

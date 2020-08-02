@@ -1,4 +1,4 @@
-# dztools | formatting | eslint-config-react | Changelog
+# @dztools/eslint-config-react | Changelog
 
 ## v1.0.1
 

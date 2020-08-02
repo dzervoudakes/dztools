@@ -1,4 +1,4 @@
-# dztools | formatting | eslint-config-react-typescript | Changelog
+# @dztools/eslint-config-react-typescript | Changelog
 
 ## v1.0.1
 

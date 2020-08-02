@@ -1,4 +1,4 @@
-# dztools/formatting/eslint-config-react-typescript
+# @dztools/eslint-config-react-typescript
 
 > ESLint configuration for React + TypeScript applications.
 

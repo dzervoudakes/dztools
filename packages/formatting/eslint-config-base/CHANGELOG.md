@@ -1,4 +1,4 @@
-# dztools | formatting | eslint-config-base | Changelog
+# @dztools/eslint-config-base | Changelog
 
 ## v1.0.1
 

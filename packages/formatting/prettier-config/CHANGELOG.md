@@ -1,4 +1,4 @@
-# dztools | formatting | prettier-config | Changelog
+# @dztools/prettier-config | Changelog
 
 ## v1.0.1
 

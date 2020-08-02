@@ -1,4 +1,4 @@
-# dztools
+# @dztools
 
 > Mono repo for various configurations to be shared across frontend applications.
 

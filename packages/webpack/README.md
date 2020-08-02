@@ -1,4 +1,4 @@
-# dztools/webpack
+# @dztools/webpack
 
 > Shared Webpack configurations.
 

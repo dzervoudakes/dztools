@@ -1,4 +1,4 @@
-# dztools/formatting/eslint-config-react
+# @dztools/eslint-config-react
 
 > ESLint configuration for React + JavaScript applications.
 

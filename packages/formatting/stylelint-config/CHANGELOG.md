@@ -1,4 +1,4 @@
-# dztools | formatting | stylelint-config | Changelog
+# @dztools/stylelint-config | Changelog
 
 ## v1.0.1
 

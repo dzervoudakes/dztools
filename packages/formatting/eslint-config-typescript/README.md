@@ -1,4 +1,4 @@
-# dztools/formatting/eslint-config-typescript
+# @dztools/eslint-config-typescript
 
 > Base ESLint configuration for TypeScript applications.
 

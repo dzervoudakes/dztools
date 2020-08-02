@@ -1,4 +1,4 @@
-# dztools/formatting/prettier-config
+# @dztools/prettier-config
 
 > Base configuration for Prettier runtime config.
 

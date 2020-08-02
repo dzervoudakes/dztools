@@ -1,4 +1,4 @@
-# dztools/formatting/stylelint-config
+# @dztools/stylelint-config
 
 > Base configuration for StyleLint runtime config.
 
