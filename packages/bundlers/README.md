@@ -1,5 +1,5 @@
-# @dztools/webpack
+# @dztools/bundlers
 
-> Shared [Webpack](https://webpack.js.org/) configurations.
+> Shared bundler configurations, including [Webpack](https://webpack.js.org/).
 
 Explore each package within this directory for relevant information regarding dependencies and usage.

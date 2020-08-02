@@ -21,6 +21,6 @@ In an effort to ensure consistency and scalability, I've decided to create a sha
 - [prettier-config](packages/formatting/prettier-config/README.md)
 - [stylelint-config](packages/formatting/stylelint-config/README.md)
 
-### Webpack
+### Bundlers
 
-_Coming soon..._
+- [webpack-config-react](packages/bundlers/webpack-config-react/README.md)
