@@ -17,7 +17,7 @@ To install the package:
 If peer dependencies are needed, run the following:
 
 ```
-[npm i -D || yarn add -D] babel-loader css-loader eslint-loader file-loader postcss-loader sass-loader style-loader url-loader
+[npm i -D || yarn add -D] babel-loader css-loader eslint-loader file-loader postcss-loader sass-loader style-loader url-loader webpack
 ```
 
 ## Usage
