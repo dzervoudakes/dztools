@@ -24,7 +24,7 @@ If peer dependencies are needed, run the following:
 
 In your local `prettierrc` file:
 
-```
+```js
 const config = require('@dztools/prettier-config');
 
 module.exports = config;

@@ -24,7 +24,7 @@ If peer dependencies are needed, run the following:
 
 In your local `stylelintrc` file:
 
-```
+```js
 module.exports = {
   extends: ['@dztools/stylelint-config']
 };

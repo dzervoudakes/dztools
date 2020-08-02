@@ -24,7 +24,7 @@ If peer dependencies are needed, run the following:
 
 In your local `eslintrc` config file:
 
-```
+```js
 module.exports = {
   extends: ['@dztools/eslint-config-react']
 };
