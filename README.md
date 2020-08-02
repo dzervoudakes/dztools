@@ -24,3 +24,4 @@ In an effort to ensure consistency and scalability, I've decided to create a sha
 ### Bundlers
 
 - [webpack-config-react](packages/bundlers/webpack-config-react/README.md)
+- [webpack-config-react-typescript](packages/bundlers/webpack-config-react-typescript/README.md)
