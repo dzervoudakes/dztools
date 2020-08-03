@@ -17,7 +17,7 @@ To install the package:
 If peer dependencies are needed, run the following:
 
 ```
-[npm i -D || yarn add -D] css-loader file-loader postcss-loader sass-loader source-map-loader style-loader ts-loader url-loader
+[npm i -D || yarn add -D] css-loader file-loader postcss-loader sass-loader source-map-loader style-loader ts-loader url-loader webpack
 ```
 
 ## Usage
@@ -27,7 +27,7 @@ In your local `webpack.base.js` or `webpack.common.js` file:
 ```js
 const { webpackBaseConfig } = require('@dztools/webpack-config-react-typescript');
 
-module.exports = webpackBaseConfig(__dirname);
+module.exports = webpackBaseConfig;
 ```
 
 In your local `webpack.dev.js` file:
@@ -35,7 +35,7 @@ In your local `webpack.dev.js` file:
 ```js
 const { webpackDevConfig } = require('@dztools/webpack-config-react-typescript');
 
-module.exports = webpackDevConfig(__dirname);
+module.exports = webpackDevConfig;
 ```
 
 In your local `webpack.prod.js` file:
@@ -43,13 +43,13 @@ In your local `webpack.prod.js` file:
 ```js
 const { webpackProdConfig } = require('@dztools/webpack-config-react-typescript');
 
-module.exports = webpackProdConfig(__dirname);
+module.exports = webpackProdConfig;
 ```
 
 ## Notes
 
 - This package has been created with the needs of the [React Scaffolder Yeoman generator](https://github.com/dzervoudakes/react-scaffolder) in mind.
-- The `__dirname` of your local build/Webpack directory will need to be passed into each configuration, per the examples above.
+- The base configuration expects both `./src/polyfills.ts` and `./src/index.tsx` to exist for the entry point, and the build will fail if these files are not found.
 - Your React app will also need a local `webpack.config.js` file responsible for merging dev and prod configs with the base config as needed.
 
 Example, basic `webpack.config.js` file:
@@ -82,7 +82,7 @@ const path = require('path');
 const { merge } = require('webpack-merge');
 const { webpackBaseConfig } = require('@dztools/webpack-config-react-typescript');
 
-module.exports = merge(webpackBaseConfig(__dirname), {
+module.exports = merge(webpackBaseConfig, {
   resolve: {
     alias: {
       '@alias': path.resolve('path', 'to', 'directory')
