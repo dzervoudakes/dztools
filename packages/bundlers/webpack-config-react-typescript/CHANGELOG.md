@@ -1,5 +1,11 @@
 # @dztools/webpack-config-react-typescript | Changelog
 
+## v1.2.0
+
+**Release Date:** 2020-08-03
+
+* Resolve paths for `webpack` loaders locally; shifts dependencies to this package and away from consumers.
+
 ## v1.1.0
 
 **Release Date:** 2020-08-03

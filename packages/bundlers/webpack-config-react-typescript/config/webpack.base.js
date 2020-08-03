@@ -9,10 +9,12 @@ const APP_DIR = path.resolve(ROOT_DIR, 'src');
 const PUBLIC_DIR = path.resolve(ROOT_DIR, 'public');
 
 const styleLoader =
-  process.env.NODE_ENV === 'development' ? 'style-loader' : MiniCssExtractPlugin.loader;
+  process.env.NODE_ENV === 'development'
+    ? require.resolve('style-loader')
+    : MiniCssExtractPlugin.loader;
 
 const sassLoader = {
-  loader: 'sass-loader',
+  loader: require.resolve('sass-loader'),
   options: {
     sassOptions: {
       includePaths: [path.resolve(ROOT_DIR, 'node_modules')]
@@ -29,24 +31,29 @@ module.exports = {
       {
         test: /\.(ts|tsx|js|jsx|mjs)$/,
         include: APP_DIR,
-        loader: 'ts-loader'
+        loader: require.resolve('ts-loader')
       },
       {
         test: /\.js$/,
-        use: ['source-map-loader'],
+        use: [require.resolve('source-map-loader')],
         enforce: 'pre'
       },
       {
         test: /\.(css|scss)$/,
         exclude: /\.module\.(css|scss)$/,
-        use: [styleLoader, 'css-loader', 'postcss-loader', sassLoader]
+        use: [
+          styleLoader,
+          require.resolve('css-loader'),
+          require.resolve('postcss-loader'),
+          sassLoader
+        ]
       },
       {
         test: /\.module\.(css|scss)$/,
         use: [
           styleLoader,
           {
-            loader: 'css-loader',
+            loader: require.resolve('css-loader'),
             options: {
               url: false,
               localsConvention: 'camelCase',
@@ -56,13 +63,13 @@ module.exports = {
               }
             }
           },
-          'postcss-loader',
+          require.resolve('postcss-loader'),
           sassLoader
         ]
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
-        loader: 'url-loader',
+        loader: require.resolve('url-loader'),
         options: {
           limit: 10000,
           name: path.join('images', '[name].[hash:7].[ext]')
@@ -70,7 +77,7 @@ module.exports = {
       },
       {
         test: /\.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/,
-        loader: 'url-loader',
+        loader: require.resolve('url-loader'),
         options: {
           limit: 10000,
           name: path.join('media', '[name].[hash:7].[ext]')
@@ -78,7 +85,7 @@ module.exports = {
       },
       {
         test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
-        loader: 'url-loader',
+        loader: require.resolve('url-loader'),
         options: {
           limit: 10000,
           name: path.join('fonts', '[name].[hash:7].[ext]')

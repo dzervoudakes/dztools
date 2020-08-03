@@ -14,12 +14,6 @@ To install the package:
 [npm i -D || yarn add -D] @dztools/webpack-config-react
 ```
 
-If peer dependencies are needed, run the following:
-
-```
-[npm i -D || yarn add -D] babel-loader css-loader eslint-loader file-loader postcss-loader sass-loader style-loader url-loader webpack
-```
-
 ## Usage
 
 In your local `webpack.base.js` or `webpack.common.js` file:
