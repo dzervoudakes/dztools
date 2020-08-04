@@ -1,6 +1,6 @@
 {
   "name": "@dztools/stylelint-config",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Base configuration for StyleLint runtime config.",
   "repository": {
     "type": "git",
@@ -17,13 +17,15 @@
     "scss",
     "stylelint"
   ],
+  "peerDependencies": {
+    "stylelint": "^13.6.1"
+  },
   "scripts": {
     "lint": "eslint . --ext js",
     "lint:fix": "npm run lint -- --fix",
     "prepublishOnly": "npm run lint"
   },
   "dependencies": {
-    "stylelint": "13.6.1",
     "stylelint-config-prettier": "8.0.2",
     "stylelint-config-standard": "20.0.0",
     "stylelint-order": "4.1.0",
