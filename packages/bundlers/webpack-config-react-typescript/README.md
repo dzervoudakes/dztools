@@ -8,8 +8,6 @@
 
 ## Installation
 
-To install the package:
-
 ```
 [npm i -D || yarn add -D] @dztools/webpack-config-react-typescript
 ```
