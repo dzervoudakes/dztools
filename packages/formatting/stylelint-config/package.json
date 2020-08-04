@@ -17,13 +17,13 @@
     "scss",
     "stylelint"
   ],
-  "peerDependencies": {
-    "stylelint": "^13.6.1"
-  },
   "scripts": {
     "lint": "eslint . --ext js",
     "lint:fix": "npm run lint -- --fix",
     "prepublishOnly": "npm run lint"
+  },
+  "peerDependencies": {
+    "stylelint": "^13.6.1"
   },
   "dependencies": {
     "stylelint-config-prettier": "8.0.2",
