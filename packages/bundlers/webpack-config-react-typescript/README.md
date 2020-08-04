@@ -6,10 +6,18 @@
 [![prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://prettier.io/)
 [![license](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-## Installation
+## Installation and Dependencies
+
+To install the package:
 
 ```
 [npm i -D || yarn add -D] @dztools/webpack-config-react-typescript
+```
+
+If peer dependencies are needed, run the following:
+
+```
+[npm i -D || yarn add -D] webpack
 ```
 
 ## Usage

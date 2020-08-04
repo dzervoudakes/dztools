@@ -1,6 +1,6 @@
 {
   "name": "@dztools/webpack-config-react-typescript",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Webpack base, dev, and prod configurations for React + TypeScript templates.",
   "repository": {
     "type": "git",
@@ -21,11 +21,15 @@
     "lint:fix": "npm run lint -- --fix",
     "prepublishOnly": "npm run lint"
   },
+  "peerDependencies": {
+    "webpack": "^4.44.1"
+  },
   "dependencies": {
     "@hot-loader/react-dom": "16.13.0",
     "case-sensitive-paths-webpack-plugin": "2.3.0",
     "clean-webpack-plugin": "3.0.0",
     "css-loader": "4.2.0",
+    "file-loader": "6.0.0",
     "friendly-errors-webpack-plugin": "1.7.0",
     "hard-source-webpack-plugin": "0.13.1",
     "html-webpack-plugin": "4.3.0",

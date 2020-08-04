@@ -1,5 +1,11 @@
 # @dztools/webpack-config-react | Changelog
 
+## v1.2.1
+
+**Release Date:** 2020-08-04
+
+* Update peer dependencies.
+
 ## v1.2.0
 
 **Release Date:** 2020-08-03
