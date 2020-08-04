@@ -6,18 +6,10 @@
 [![prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://prettier.io/)
 [![license](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-## Installation and Dependencies
-
-To install the package:
+## Installation
 
 ```
 [npm i -D || yarn add -D] @dztools/stylelint-config
-```
-
-If peer dependencies are needed, run the following:
-
-```
-[npm i -D || yarn add -D] stylelint stylelint-config-prettier stylelint-config-standard stylelint-order stylelint-prettier
 ```
 
 ## Usage
