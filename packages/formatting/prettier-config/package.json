@@ -15,13 +15,13 @@
     "eslint",
     "prettier"
   ],
-  "peerDependencies": {
-    "prettier": "^2.0.5"
-  },
   "scripts": {
     "lint": "eslint . --ext js",
     "lint:fix": "npm run lint -- --fix",
     "prepublishOnly": "npm run lint"
+  },
+  "peerDependencies": {
+    "prettier": "^2.0.5"
   },
   "devDependencies": {
     "eslint": "7.6.0",
