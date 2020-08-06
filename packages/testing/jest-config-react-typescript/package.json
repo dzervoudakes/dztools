@@ -1,21 +1,21 @@
 {
-  "name": "@dztools/jest-config-react",
+  "name": "@dztools/jest-config-react-typescript",
   "version": "1.0.0",
-  "description": "Jest configuration for React + JavaScript templates.",
+  "description": "Jest configuration for React + TypeScript templates.",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/dzervoudakes/dztools.git"
   },
-  "homepage": "https://github.com/dzervoudakes/dztools/tree/master/packages/testing/jest-config-react#readme",
+  "homepage": "https://github.com/dzervoudakes/dztools/tree/master/packages/testing/jest-config-react-typescript#readme",
   "author": "dzervoudakes",
   "license": "MIT",
   "main": "jest-preset.js",
   "keywords": [
     "config",
-    "javascript",
     "jest",
     "react",
-    "testing"
+    "testing",
+    "typescript"
   ],
   "scripts": {
     "lint": "eslint . --ext js",
@@ -28,12 +28,11 @@
   },
   "dependencies": {
     "@testing-library/jest-dom": "5.11.2",
-    "babel-jest": "26.2.2",
     "identity-obj-proxy": "3.0.0",
     "jest-environment-jsdom": "26.2.0",
     "jest-environment-jsdom-global": "2.0.4",
     "jest-localstorage-mock": "2.4.3",
-    "jest-prop-type-error": "1.1.0"
+    "ts-jest": "26.1.4"
   },
   "devDependencies": {
     "eslint": "7.6.0",
