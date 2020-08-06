@@ -19,10 +19,7 @@ module.exports = {
     '^@shared[/](.+)': '<rootDir>/src/components/shared/$1',
     '^node_modules[/](.+)': '<rootDir>/node_modules/$1'
   },
-  setupFiles: [
-    require.resolve('jest-localstorage-mock'),
-    require.resolve('@testing-library/jest-dom/extend-expect')
-  ],
+  setupFiles: [require.resolve('jest-localstorage-mock')],
   setupFilesAfterEnv: [require.resolve('@testing-library/jest-dom/extend-expect')],
   testEnvironment: require.resolve('jest-environment-jsdom-global'),
   testMatch: [
