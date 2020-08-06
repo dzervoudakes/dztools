@@ -39,7 +39,12 @@ module.exports = {
   root: true,
   rules: {
     // TypeScript rules
-    '@typescript-eslint/explicit-function-return-type': ERROR,
+    '@typescript-eslint/explicit-function-return-type': [
+      ERROR,
+      {
+        allowExpressions: true
+      }
+    ],
     '@typescript-eslint/no-unused-vars': ERROR,
 
     // standard rules

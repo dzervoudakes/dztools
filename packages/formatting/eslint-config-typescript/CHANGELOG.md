@@ -1,5 +1,11 @@
 # @dztools/eslint-config-typescript | Changelog
 
+## v1.0.3
+
+**Release Date:** 2020-08-06
+
+* Add `allowExpressions: true` option to `@typescript-eslint/explicit-function-return-type` rule.
+
 ## v1.0.2
 
 **Release Date:** 2020-08-04
