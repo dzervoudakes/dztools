@@ -3,7 +3,7 @@
 > Mono repo for various configurations to be shared across frontend applications.
 
 [![prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://prettier.io/)
-[![license](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![license](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/dzervoudakes/dztools/blob/master/LICENSE)
 
 ## Thought Process
 
