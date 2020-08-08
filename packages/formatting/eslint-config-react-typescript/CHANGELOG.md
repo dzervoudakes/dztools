@@ -1,5 +1,11 @@
 # @dztools/eslint-config-react-typescript | Changelog
 
+## v1.0.4
+
+**Release Date:** 2020-08-08
+
+* Remove duplicate `no-unused-vars: ERROR` rule.
+
 ## v1.0.3
 
 **Release Date:** 2020-08-06

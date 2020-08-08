@@ -58,7 +58,6 @@ module.exports = {
     'no-console': WARN,
     'no-param-reassign': ERROR,
     'no-plusplus': [ERROR, { allowForLoopAfterthoughts: true }],
-    'no-unused-vars': ERROR,
     'no-var': ERROR,
     'prefer-const': ERROR,
     'prefer-template': ERROR,
