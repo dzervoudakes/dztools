@@ -31,11 +31,11 @@ module.exports = {
       {
         test: /\.(ts|tsx|js|jsx|mjs)$/,
         include: APP_DIR,
-        loader: require.resolve('ts-loader')
+        loader: require.resolve('awesome-typescript-loader')
       },
       {
         test: /\.js$/,
-        use: [require.resolve('source-map-loader')],
+        loader: require.resolve('source-map-loader'),
         enforce: 'pre'
       },
       {
