@@ -1,5 +1,11 @@
 # @dztools/webpack-config-react-typescript | Changelog
 
+## v1.3.0
+
+**Release Date:** 2020-08-15
+
+* Implement `webpack-dev-server`.
+
 ## v1.2.1
 
 **Release Date:** 2020-08-04

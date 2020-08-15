@@ -17,7 +17,7 @@ To install the package:
 If peer dependencies are needed, run the following:
 
 ```
-[npm i -D || yarn add -D] webpack
+[npm i -D || yarn add -D] webpack-cli webpack-dev-server webpack
 ```
 
 ## Usage
@@ -56,7 +56,7 @@ Example, basic `webpack.config.js` file:
 
 ```js
 const { merge } = require('webpack-merge');
-const baseConfig = require('./webpack.base');
+const baseConfig = require('./build/webpack.base');
 
 const envs = {
   development: 'dev',
@@ -64,10 +64,9 @@ const envs = {
 };
 
 const env = envs[process.env.NODE_ENV || 'development'];
-const envConfig = require(`./webpack.${env}.js`);
+const envConfig = require(`./build/webpack.${env}.js`);
 
 module.exports = merge(baseConfig, envConfig);
-
 ```
 
 ## Extending and Customization
@@ -89,7 +88,6 @@ module.exports = merge(webpackBaseConfig, {
     }
   }
 });
-
 ```
 
 ## License
