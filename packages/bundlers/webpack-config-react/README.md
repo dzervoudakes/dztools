@@ -17,7 +17,7 @@ To install the package:
 If peer dependencies are needed, run the following:
 
 ```
-[npm i -D || yarn add -D] webpack-cli webpack-dev-server webpack
+[npm i -D || yarn add -D] webpack webpack-cli webpack-dev-server
 ```
 
 ## Usage
