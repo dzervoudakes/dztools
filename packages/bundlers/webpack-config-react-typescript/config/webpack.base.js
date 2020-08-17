@@ -31,7 +31,7 @@ module.exports = {
       {
         test: /\.(ts|tsx|js|jsx|mjs)$/,
         include: APP_DIR,
-        loader: require.resolve('awesome-typescript-loader')
+        loader: require.resolve('ts-loader')
       },
       {
         test: /\.js$/,

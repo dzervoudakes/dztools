@@ -1,5 +1,11 @@
 # @dztools/webpack-config-react-typescript | Changelog
 
+## v1.3.2
+
+**Release Date:** 2020-08-17
+
+* Switch back to `ts-loader` in favor of a more simplified HMR pattern in `react-scaffolder`.
+
 ## v1.3.1
 
 **Release Date:** 2020-08-15
