@@ -1,6 +1,6 @@
 {
   "name": "@dztools/jest-config-react-typescript",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Jest configuration for React + TypeScript templates.",
   "repository": {
     "type": "git",

@@ -1,8 +1,5 @@
 module.exports = {
-  collectCoverageFrom: [
-    '<rootDir>/src/**/*.{js,jsx,mjs}',
-    '!<rootDir>/src/components/**/index.js'
-  ],
+  collectCoverageFrom: ['<rootDir>/src/**/*.{js,jsx,mjs}', '!<rootDir>/src/**/index.js'],
   coveragePathIgnorePatterns: ['<rootDir>/src/index.jsx', '<rootDir>/src/polyfills.js'],
   coverageThreshold: {
     global: {

@@ -2,7 +2,7 @@ module.exports = {
   collectCoverageFrom: [
     '<rootDir>/src/**/*.{ts,tsx,js,jsx,mjs}',
     '!<rootDir>/src/**/*.d.ts',
-    '!<rootDir>/src/components/**/index.ts'
+    '!<rootDir>/src/**/index.ts'
   ],
   coveragePathIgnorePatterns: ['<rootDir>/src/index.tsx', '<rootDir>/src/polyfills.ts'],
   coverageThreshold: {
