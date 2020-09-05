@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
 const HtmlPlugin = require('html-webpack-plugin');
@@ -94,6 +95,9 @@ module.exports = {
     ]
   },
   plugins: [
+    new webpack.EnvironmentPlugin({
+      NODE_ENV: process.env.NODE_ENV || 'development'
+    }),
     new CaseSensitivePathsPlugin(),
     new HtmlPlugin({
       favicon: path.resolve(PUBLIC_DIR, 'favicon.ico'),

@@ -1,5 +1,11 @@
 # @dztools/webpack-config-react-typescript | Changelog
 
+## v1.3.3
+
+**Release Date:** 2020-09-05
+
+* Move `webpack.EnvironmentPlugin` definition to base config.
+
 ## v1.3.2
 
 **Release Date:** 2020-08-17

@@ -1,5 +1,11 @@
 # @dztools/webpack-config-react | Changelog
 
+## v1.3.1
+
+**Release Date:** 2020-09-05
+
+* Move `webpack.EnvironmentPlugin` definition to base config.
+
 ## v1.3.0
 
 **Release Date:** 2020-08-15

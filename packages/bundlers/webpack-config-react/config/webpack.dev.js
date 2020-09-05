@@ -27,9 +27,6 @@ module.exports = {
     quiet: true
   },
   plugins: [
-    new webpack.EnvironmentPlugin({
-      NODE_ENV: 'development'
-    }),
     new webpack.HotModuleReplacementPlugin(),
     new FriendlyErrorsPlugin(),
     new HardSourcePlugin(),

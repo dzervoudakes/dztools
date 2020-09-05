@@ -11,9 +11,6 @@ const ROOT_DIR = fs.realpathSync(process.cwd());
 const BUILD_DIR = path.resolve(ROOT_DIR, 'dist');
 
 const plugins = [
-  new webpack.EnvironmentPlugin({
-    NODE_ENV: 'production'
-  }),
   new CleanPlugin(),
   new MiniCssExtractPlugin({
     filename: path.join('css', '[name].[chunkhash].min.css')
