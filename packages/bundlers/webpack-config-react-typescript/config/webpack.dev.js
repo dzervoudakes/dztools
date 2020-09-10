@@ -17,7 +17,7 @@ module.exports = {
       app.use(webpackDevServerWaitpage(server, { theme: 'dark' }));
     },
     contentBase: path.resolve(ROOT_DIR, 'src'),
-    port: 8080,
+    port: process.env.PORT || 8080,
     historyApiFallback: true,
     hot: true,
     compress: true,

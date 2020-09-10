@@ -1,5 +1,11 @@
 # @dztools/webpack-config-react | Changelog
 
+## v1.3.2
+
+**Release Date:** 2020-09-10
+
+* Enable `port` override in `devServer` config.
+
 ## v1.3.1
 
 **Release Date:** 2020-09-05
