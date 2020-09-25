@@ -1,10 +1,15 @@
 module.exports = {
   extends: [
+    require.resolve('stylelint-a11y/recommended'),
     require.resolve('stylelint-config-standard'),
     require.resolve('stylelint-prettier/recommended')
   ],
   syntax: 'scss',
-  plugins: [require.resolve('stylelint-order'), require.resolve('stylelint-prettier')],
+  plugins: [
+    require.resolve('stylelint-a11y'),
+    require.resolve('stylelint-order'),
+    require.resolve('stylelint-prettier')
+  ],
   rules: {
     'declaration-block-no-duplicate-properties': true,
     'declaration-block-no-redundant-longhand-properties': true,

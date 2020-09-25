@@ -1,5 +1,11 @@
 # @dztools/stylelint-config | Changelog
 
+## v1.2.0
+
+**Release Date:** 2020-09-25
+
+* Extend `stylelint-a11y/recommended` config for accessibility.
+
 ## v1.1.1
 
 **Release Date:** 2020-08-03

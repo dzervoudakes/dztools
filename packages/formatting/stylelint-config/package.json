@@ -1,6 +1,6 @@
 {
   "name": "@dztools/stylelint-config",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "Base configuration for StyleLint runtime config.",
   "repository": {
     "type": "git",
@@ -26,6 +26,7 @@
     "stylelint": "^13.6.1"
   },
   "dependencies": {
+    "stylelint-a11y": "1.2.3",
     "stylelint-config-prettier": "8.0.2",
     "stylelint-config-standard": "20.0.0",
     "stylelint-order": "4.1.0",
