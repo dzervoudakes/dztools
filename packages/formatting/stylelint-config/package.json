@@ -1,6 +1,6 @@
 {
   "name": "@dztools/stylelint-config",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Base configuration for StyleLint runtime config.",
   "repository": {
     "type": "git",

@@ -11,10 +11,10 @@ module.exports = {
     require.resolve('stylelint-prettier')
   ],
   rules: {
+    // standard rules
     'declaration-block-no-duplicate-properties': true,
     'declaration-block-no-redundant-longhand-properties': true,
     indentation: 2,
-    'order/properties-alphabetical-order': true,
     'property-no-vendor-prefix': true,
     'selector-list-comma-newline-after': 'always-multi-line',
     'selector-pseudo-class-no-unknown': [
@@ -25,6 +25,13 @@ module.exports = {
     ],
     'shorthand-property-no-redundant-values': true,
     'string-quotes': 'single',
-    'value-list-comma-space-after': 'always'
+    'value-list-comma-space-after': 'always',
+
+    // accessibility
+    'a11y/no-obsolete-attribute': true,
+    'a11y/no-obsolete-element': true,
+
+    // ordering
+    'order/properties-alphabetical-order': true
   }
 };

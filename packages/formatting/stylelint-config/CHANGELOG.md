@@ -1,5 +1,11 @@
 # @dztools/stylelint-config | Changelog
 
+## v1.2.1
+
+**Release Date:** 2020-09-27
+
+* Enable `a11y/no-obsolete-attribute` and `a11y/no-obsolete-element` rules.
+
 ## v1.2.0
 
 **Release Date:** 2020-09-25
