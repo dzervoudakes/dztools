@@ -12,6 +12,11 @@ In an effort to ensure consistency and scalability, I've decided to create a sha
 
 ## Available Configurations
 
+### Bundling
+
+- [webpack-config-react](packages/bundling/webpack-config-react/README.md)
+- [webpack-config-react-typescript](packages/bundling/webpack-config-react-typescript/README.md)
+
 ### Formatting
 
 - [eslint-config-base](packages/formatting/eslint-config-base/README.md)
@@ -21,7 +26,7 @@ In an effort to ensure consistency and scalability, I've decided to create a sha
 - [prettier-config](packages/formatting/prettier-config/README.md)
 - [stylelint-config](packages/formatting/stylelint-config/README.md)
 
-### Bundlers
+### Testing
 
-- [webpack-config-react](packages/bundlers/webpack-config-react/README.md)
-- [webpack-config-react-typescript](packages/bundlers/webpack-config-react-typescript/README.md)
+- [jest-config-react](packages/testing/jest-config-react/README.md)
+- [jest-config-react-typescript](packages/testing/jest-config-react-typescript/README.md)
