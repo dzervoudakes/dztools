@@ -1,5 +1,11 @@
 # @dztools/eslint-config-react-typescript | Changelog
 
+## v1.0.5
+
+**Release Date:** 2020-11-01
+
+* Add `@typescript-eslint/prefer-nullish-coalescing` rule.
+
 ## v1.0.4
 
 **Release Date:** 2020-08-08

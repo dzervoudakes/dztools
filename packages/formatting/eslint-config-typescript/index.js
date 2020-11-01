@@ -32,6 +32,7 @@ module.exports = {
       }
     ],
     '@typescript-eslint/no-unused-vars': ERROR,
+    '@typescript-eslint/prefer-nullish-coalescing': ERROR,
 
     // standard rules
     'class-methods-use-this': OFF,
