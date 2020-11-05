@@ -1,5 +1,12 @@
 # @dztools/eslint-config-typescript | Changelog
 
+## v1.0.6
+
+**Release Date:** 2020-11-04
+
+* Remove `@typescript-eslint/prefer-nullish-coalescing` rule due to unintended side effects in consuming applications.
+* Enable `@typescript-eslint/no-use-before-define` rule and disable default eslint `no-use-before-define` variant.
+
 ## v1.0.5
 
 **Release Date:** 2020-11-01

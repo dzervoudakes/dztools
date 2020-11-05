@@ -46,7 +46,7 @@ module.exports = {
       }
     ],
     '@typescript-eslint/no-unused-vars': ERROR,
-    '@typescript-eslint/prefer-nullish-coalescing': ERROR,
+    '@typescript-eslint/no-use-before-define': ERROR,
 
     // standard rules
     'class-methods-use-this': OFF,
@@ -59,6 +59,7 @@ module.exports = {
     'no-console': WARN,
     'no-param-reassign': ERROR,
     'no-plusplus': [ERROR, { allowForLoopAfterthoughts: true }],
+    'no-use-before-define': OFF, // this rule clashes with 'import React' statements; '@typescript-eslint' variant above works
     'no-var': ERROR,
     'prefer-const': ERROR,
     'prefer-template': ERROR,

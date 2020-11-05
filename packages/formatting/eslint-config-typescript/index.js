@@ -32,7 +32,7 @@ module.exports = {
       }
     ],
     '@typescript-eslint/no-unused-vars': ERROR,
-    '@typescript-eslint/prefer-nullish-coalescing': ERROR,
+    '@typescript-eslint/no-use-before-define': ERROR,
 
     // standard rules
     'class-methods-use-this': OFF,
@@ -45,6 +45,7 @@ module.exports = {
     'no-console': WARN,
     'no-param-reassign': ERROR,
     'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
+    'no-use-before-define': OFF, // '@typescript-eslint' variant enabled above
     'no-undef': ERROR,
     'no-var': ERROR,
     'prefer-const': ERROR,
