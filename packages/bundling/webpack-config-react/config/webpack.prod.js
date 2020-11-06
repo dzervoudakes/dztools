@@ -33,10 +33,10 @@ module.exports = {
   optimization: {
     minimizer: [
       new TerserPlugin({
-        cache: true,
+        // cache: true, @todo
         extractComments: true,
-        parallel: true,
-        sourceMap: true
+        parallel: true
+        // sourceMap: true @todo
       })
     ],
     splitChunks: {

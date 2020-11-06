@@ -11,7 +11,7 @@ const PUBLIC_DIR = path.resolve(ROOT_DIR, 'public');
 
 module.exports = {
   mode: 'development',
-  devtool: 'cheap-module-eval-source-map',
+  devtool: 'eval-cheap-module-source-map',
   devServer: {
     before: (app, server) => {
       app.use(webpackDevServerWaitpage(server, { theme: 'dark' }));
@@ -38,8 +38,8 @@ module.exports = {
     }
   },
   optimization: {
-    noEmitOnErrors: true,
-    namedModules: true,
+    emitOnErrors: false,
+    moduleIds: 'named',
     runtimeChunk: true
   },
   output: {

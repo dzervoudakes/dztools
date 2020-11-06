@@ -1,5 +1,11 @@
 # @dztools/webpack-config-react | Changelog
 
+## v1.4.0
+
+**Release Date:** unreleased
+
+* Update dependencies, including `webpack 5.x.x` migration.
+
 ## v1.3.2
 
 **Release Date:** 2020-09-10
