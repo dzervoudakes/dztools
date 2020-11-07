@@ -1,5 +1,11 @@
 # @dztools/eslint-config-react | Changelog
 
+## v1.0.3
+
+**Release Date:** 2020-11-07
+
+* Update dependencies.
+
 ## v1.0.2
 
 **Release Date:** 2020-08-04
