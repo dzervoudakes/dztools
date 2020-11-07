@@ -1,5 +1,11 @@
 # @dztools/eslint-config-typescript | Changelog
 
+## v1.0.7
+
+**Release Date:** 2020-11-07
+
+* Update dependencies.
+
 ## v1.0.6
 
 **Release Date:** 2020-11-04
