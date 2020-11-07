@@ -1,5 +1,12 @@
 # @dztools/jest-config-react-typescript | Changelog
 
+## v1.1.0
+
+**Release Date:** 2020-11-07
+
+* **Breaking:** Remove `@shared` module name mapping.
+* Update dependencies.
+
 ## v1.0.1
 
 **Release Date:** 2020-08-22
