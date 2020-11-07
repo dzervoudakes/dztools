@@ -12,7 +12,6 @@ module.exports = {
   moduleNameMapper: {
     '\\.s?css$': require.resolve('identity-obj-proxy'),
     '^@src[/](.+)': '<rootDir>/src/$1',
-    '^@shared[/](.+)': '<rootDir>/src/components/shared/$1',
     '^node_modules[/](.+)': '<rootDir>/node_modules/$1'
   },
   setupFiles: [
