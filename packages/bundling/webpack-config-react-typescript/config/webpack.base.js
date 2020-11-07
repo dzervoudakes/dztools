@@ -113,8 +113,7 @@ module.exports = {
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx', '.mjs', '.json', '.scss', '.css'],
     alias: {
-      '@src': APP_DIR,
-      '@shared': path.resolve(APP_DIR, 'components', 'shared')
+      '@src': APP_DIR
     }
   }
 };

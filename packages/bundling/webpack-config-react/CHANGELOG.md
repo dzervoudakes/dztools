@@ -1,10 +1,12 @@
 # @dztools/webpack-config-react | Changelog
 
-## v1.4.0
+## v2.0.0
 
 **Release Date:** unreleased
 
-* Update dependencies, including `webpack 5.x.x` migration.
+* **Breaking:** Migrate schema to `webpack 5.x.x`.
+* **Breaking:** Remove `@shared` alias.
+* Update dependencies.
 
 ## v1.3.2
 

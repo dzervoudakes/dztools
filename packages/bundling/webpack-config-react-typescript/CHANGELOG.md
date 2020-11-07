@@ -1,5 +1,13 @@
 # @dztools/webpack-config-react-typescript | Changelog
 
+## v2.0.0
+
+**Release Date:** unreleased
+
+* **Breaking:** Migrate schema to `webpack 5.x.x`.
+* **Breaking:** Remove `@shared` alias.
+* Update dependencies.
+
 ## v1.3.4
 
 **Release Date:** 2020-09-10
