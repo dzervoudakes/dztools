@@ -56,7 +56,7 @@ module.exports = {
     path: BUILD_DIR,
     publicPath: '/',
     filename: path.join('js', '[name].[chunkhash].min.js'),
-    sourceMapFilename: path.join('js', '[name].[chunkhash].min.map'),
+    sourceMapFilename: path.join('js', '[name].[chunkhash].min.js.map'),
     chunkFilename: path.join('js', '[name].[chunkhash].min.js')
   }
 };
