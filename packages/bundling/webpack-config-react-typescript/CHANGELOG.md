@@ -1,5 +1,11 @@
 # @dztools/webpack-config-react-typescript | Changelog
 
+## v1.3.5
+
+**Release Date:** 2021-01-14
+
+* Fix `sourceMapFilename` filename extension in `webpack.prod.js`.
+
 ## v1.3.4
 
 **Release Date:** 2020-09-10

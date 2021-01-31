@@ -1,5 +1,11 @@
 # @dztools/webpack-config-react | Changelog
 
+## v1.3.3
+
+**Release Date:** 2021-01-14
+
+* Fix `sourceMapFilename` filename extension in `webpack.prod.js`.
+
 ## v1.3.2
 
 **Release Date:** 2020-09-10
