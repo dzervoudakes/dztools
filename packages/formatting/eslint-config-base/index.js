@@ -8,12 +8,7 @@ module.exports = {
     es6: true,
     node: true
   },
-  extends: [
-    'airbnb-base',
-    'eslint:recommended',
-    'plugin:jest/recommended',
-    'plugin:prettier/recommended'
-  ],
+  extends: ['airbnb-base', 'eslint:recommended', 'plugin:prettier/recommended'],
   plugins: ['import', 'prettier'],
   parser: 'babel-eslint',
   parserOptions: {

@@ -1,5 +1,11 @@
 # @dztools/eslint-config-base | Changelog
 
+## v1.1.0
+
+**Release Date:** 2020-01-31
+
+* Remove `eslint-plugin-jest` peer dependency.
+
 ## v1.0.3
 
 **Release Date:** 2020-11-07

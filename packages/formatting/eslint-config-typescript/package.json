@@ -1,6 +1,6 @@
 {
   "name": "@dztools/eslint-config-typescript",
-  "version": "1.0.7",
+  "version": "1.1.0",
   "description": "Base ESLint configuration for TypeScript applications.",
   "repository": {
     "type": "git",
@@ -27,7 +27,6 @@
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-jest": "^23.20.0",
     "eslint-plugin-prettier": "^3.1.4",
     "prettier": "^2.0.5",
     "typescript": "^3.9.7"
