@@ -1,5 +1,11 @@
 # @dztools/eslint-config-typescript | Changelog
 
+## v1.1.1
+
+**Release Date:** 2020-01-31
+
+* Add `ts` to ignore list for `import/extensions`.
+
 ## v1.1.0
 
 **Release Date:** 2020-01-31

@@ -53,7 +53,7 @@ module.exports = {
     'require-await': ERROR,
 
     // import rules
-    'import/extensions': [ERROR, 'always', { js: 'never' }],
+    'import/extensions': [ERROR, 'always', { js: 'never', ts: 'never' }],
     'import/no-dynamic-require': OFF,
     'import/no-unresolved': ERROR,
     'import/order': [
