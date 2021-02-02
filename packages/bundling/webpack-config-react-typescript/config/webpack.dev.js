@@ -34,7 +34,7 @@ module.exports = {
   ],
   resolve: {
     alias: {
-      'react-dom': require.resolve('@hot-loader/react-dom')
+      'react-dom': '@hot-loader/react-dom'
     }
   },
   optimization: {

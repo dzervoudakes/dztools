@@ -1,5 +1,17 @@
 # @dztools/webpack-config-react-typescript | Changelog
 
+## v1.4.1
+
+**Release Date:** 2021-02-02
+
+* Bug fix, remove `require.resolve` around `@hot-loader/react-dom` alias in `webpack.dev.js`.
+
+## v1.4.0
+
+**Release Date:** 2021-02-02
+
+* Convert `@hot-loader/react-dom` dependency to peer dependency.
+
 ## v1.3.5
 
 **Release Date:** 2021-01-14
