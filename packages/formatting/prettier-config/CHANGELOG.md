@@ -1,5 +1,11 @@
 # @dztools/prettier-config | Changelog
 
+## v1.0.4
+
+**Release Date:** 2020-02-13
+
+* Make `peerDependencies` more lenient.
+
 ## v1.0.3
 
 **Release Date:** 2020-11-07

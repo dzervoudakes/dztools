@@ -1,5 +1,11 @@
 # @dztools/eslint-config-react-typescript | Changelog
 
+## v1.0.8
+
+**Release Date:** 2020-02-13
+
+* Make `peerDependencies` more lenient.
+
 ## v1.0.7
 
 **Release Date:** 2020-11-07

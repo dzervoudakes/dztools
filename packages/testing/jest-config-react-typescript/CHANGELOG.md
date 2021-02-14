@@ -1,5 +1,11 @@
 # @dztools/jest-config-react-typescript | Changelog
 
+## v1.1.1
+
+**Release Date:** 2020-02-13
+
+* Make `peerDependencies` more lenient.
+
 ## v1.1.0
 
 **Release Date:** 2020-11-07

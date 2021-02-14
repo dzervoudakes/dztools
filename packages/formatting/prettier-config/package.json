@@ -1,6 +1,6 @@
 {
   "name": "@dztools/prettier-config",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Base configuration for Prettier runtime config.",
   "repository": {
     "type": "git",
@@ -21,7 +21,7 @@
     "prepublishOnly": "npm run lint"
   },
   "peerDependencies": {
-    "prettier": "^2.0.5"
+    "prettier": ">=2.0.5"
   },
   "devDependencies": {
     "eslint": "7.13.0",

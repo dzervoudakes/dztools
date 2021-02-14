@@ -1,5 +1,11 @@
 # @dztools/stylelint-config | Changelog
 
+## v1.2.3
+
+**Release Date:** 2020-02-13
+
+* Make `peerDependencies` more lenient.
+
 ## v1.2.2
 
 **Release Date:** 2020-11-07
