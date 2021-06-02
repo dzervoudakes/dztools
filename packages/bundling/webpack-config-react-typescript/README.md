@@ -10,13 +10,13 @@
 
 To install the package:
 
-```
+```sh
 [npm i -D || yarn add -D] @dztools/webpack-config-react-typescript
 ```
 
 If peer dependencies are needed, run the following:
 
-```
+```sh
 [npm i -D || yarn add -D] @hot-loader/react-dom webpack webpack-cli webpack-dev-server
 ```
 
@@ -94,4 +94,4 @@ module.exports = merge(webpackBaseConfig, {
 
 ## License
 
-https://github.com/dzervoudakes/dztools/blob/main/LICENSE
+[MIT](https://github.com/dzervoudakes/dztools/blob/main/LICENSE)

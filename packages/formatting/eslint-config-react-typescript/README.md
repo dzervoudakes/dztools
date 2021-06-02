@@ -10,13 +10,13 @@
 
 To install the package:
 
-```
+```sh
 [npm i -D || yarn add -D] @dztools/eslint-config-react-typescript
 ```
 
 If peer dependencies are needed, run the following:
 
-```
+```sh
 [npm i -D || yarn add -D] @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-airbnb eslint-config-prettier eslint-plugin-import eslint-plugin-jest eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks prettier typescript
 ```
 
@@ -32,4 +32,4 @@ module.exports = {
 
 ## License
 
-https://github.com/dzervoudakes/dztools/blob/main/LICENSE
+[MIT](https://github.com/dzervoudakes/dztools/blob/main/LICENSE)

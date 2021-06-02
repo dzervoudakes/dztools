@@ -10,13 +10,13 @@
 
 To install the package:
 
-```
+```sh
 [npm i -D || yarn add -D] @dztools/jest-config-react
 ```
 
 If peer dependencies are needed, run the following:
 
-```
+```sh
 [npm i -D || yarn add -D] @testing-library/react jest
 ```
 
@@ -38,4 +38,4 @@ module.exports = {
 
 ## License
 
-https://github.com/dzervoudakes/dztools/blob/main/LICENSE
+[MIT](https://github.com/dzervoudakes/dztools/blob/main/LICENSE)

@@ -10,13 +10,13 @@
 
 To install the package:
 
-```
+```sh
 [npm i -D || yarn add -D] @dztools/prettier-config
 ```
 
 If peer dependencies are needed, run the following:
 
-```
+```sh
 [npm i -D || yarn add -D] prettier
 ```
 
@@ -32,4 +32,4 @@ module.exports = config;
 
 ## License
 
-https://github.com/dzervoudakes/dztools/blob/main/LICENSE
+[MIT](https://github.com/dzervoudakes/dztools/blob/main/LICENSE)
