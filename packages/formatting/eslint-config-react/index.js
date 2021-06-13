@@ -14,6 +14,7 @@ module.exports = {
     'plugin:jest/recommended',
     'plugin:jsx-a11y/recommended',
     'plugin:react/recommended',
+    'plugin:testing-library/react',
     'plugin:prettier/recommended',
     'prettier/react'
   ],
@@ -25,7 +26,15 @@ module.exports = {
       jsx: true
     }
   },
-  plugins: ['react', 'import', 'jsx-a11y', 'react-hooks', 'prettier'],
+  plugins: [
+    'react',
+    'import',
+    'jest',
+    'jsx-a11y',
+    'react-hooks',
+    'testing-library',
+    'prettier'
+  ],
   root: true,
   rules: {
     // standard rules

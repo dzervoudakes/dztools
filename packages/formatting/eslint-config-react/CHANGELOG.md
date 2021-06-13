@@ -1,5 +1,11 @@
 # @dztools/eslint-config-react | Changelog
 
+## v1.1.0
+
+**Release Date:** 2021-06-13
+
+- Extend `eslint-plugin-testing-library` config.
+
 ## v1.0.4
 
 **Release Date:** 2020-02-13
