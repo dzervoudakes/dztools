@@ -1,5 +1,11 @@
 # @dztools/eslint-config-react | Changelog
 
+## v1.1.1
+
+**Release Date:** 2021-06-13
+
+- Migrate `prettier` plugin config to `v8.x.x`.
+
 ## v1.1.0
 
 **Release Date:** 2021-06-13

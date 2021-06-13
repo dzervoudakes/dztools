@@ -16,7 +16,7 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:testing-library/react',
     'plugin:prettier/recommended',
-    'prettier/react'
+    'prettier'
   ],
   parser: 'babel-eslint',
   parserOptions: {
