@@ -16,6 +16,7 @@ module.exports = {
     'plugin:jest/recommended',
     'plugin:jsx-a11y/recommended',
     'plugin:react/recommended',
+    'plugin:testing-library/react',
     'plugin:prettier/recommended',
     'prettier/react',
     'prettier/@typescript-eslint'
@@ -32,8 +33,10 @@ module.exports = {
     '@typescript-eslint',
     'react',
     'import',
+    'jest',
     'jsx-a11y',
     'react-hooks',
+    'testing-library',
     'prettier'
   ],
   root: true,
