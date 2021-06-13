@@ -29,9 +29,8 @@ module.exports = {
   transform: {
     '^.+\\.(ts|tsx|js|jsx|mjs)$': require.resolve('ts-jest'),
     '^.+\\.s?css$': require.resolve('./utils/style-transform.js'),
-    '^.+\\.(png|jpg|jpeg|git|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$': require.resolve(
-      './utils/file-transform.js'
-    )
+    '^.+\\.(png|jpg|jpeg|git|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
+      require.resolve('./utils/file-transform.js')
   },
   moduleDirectories: ['node_modules']
 };
