@@ -2,7 +2,7 @@
 
 ## v1.3.0
 
-**Release Date:** 2020-08-28
+**Release Date:** 2021-08-28
 
 - Update `jest-environment-jsdom-global` to inherit correct `jest-environment-jsdom` peer dependency versions.
 
