@@ -1,5 +1,11 @@
 # @dztools/jest-config-react-typescript | Changelog
 
+## v1.3.0
+
+**Release Date:** 2020-08-28
+
+- Update `jest-environment-jsdom-global` to inherit correct `jest-environment-jsdom` peer dependency versions.
+
 ## v1.2.0
 
 **Release Date:** 2020-06-13
