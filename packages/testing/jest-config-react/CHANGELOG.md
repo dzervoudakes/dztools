@@ -1,5 +1,12 @@
 # @dztools/jest-config-react | Changelog
 
+## v1.4.0
+
+**Release Date:** 2021-08-30
+
+- Update dependencies.
+- Drop support for `*.mjs` files.
+
 ## v1.3.0
 
 **Release Date:** 2021-08-28

@@ -1,6 +1,6 @@
 module.exports = {
   collectCoverageFrom: [
-    '<rootDir>/src/**/*.{ts,tsx,js,jsx,mjs}',
+    '<rootDir>/src/**/*.{ts,tsx,js,jsx}',
     '!<rootDir>/src/**/*.d.ts',
     '!<rootDir>/src/**/index.ts'
   ],
@@ -27,7 +27,7 @@ module.exports = {
   ],
   testURL: 'http://localhost',
   transform: {
-    '^.+\\.(ts|tsx|js|jsx|mjs)$': require.resolve('ts-jest'),
+    '^.+\\.(ts|tsx|js|jsx)$': require.resolve('ts-jest'),
     '^.+\\.s?css$': require.resolve('./utils/style-transform.js'),
     '^.+\\.(png|jpg|jpeg|git|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
       require.resolve('./utils/file-transform.js')
