@@ -1,5 +1,11 @@
 # @dztools/stylelint-config | Changelog
 
+## v1.3.0
+
+**Release Date:** 2021-08-30
+
+- Update standard and prettier `stylelint` configs.
+
 ## v1.2.3
 
 **Release Date:** 2020-02-13
