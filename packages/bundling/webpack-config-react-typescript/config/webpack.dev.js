@@ -1,45 +1,34 @@
 const fs = require('fs');
 const path = require('path');
-const webpack = require('webpack');
-const webpackDevServerWaitpage = require('webpack-dev-server-waitpage');
-const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin');
-const HardSourcePlugin = require('hard-source-webpack-plugin');
-const WatchMissingNodeModulesPlugin = require('react-dev-utils/WatchMissingNodeModulesPlugin');
+const FriendlyErrorsPlugin = require('@soda/friendly-errors-webpack-plugin');
 
 const ROOT_DIR = fs.realpathSync(process.cwd());
 const PUBLIC_DIR = path.resolve(ROOT_DIR, 'public');
 
 module.exports = {
   mode: 'development',
-  devtool: 'cheap-module-eval-source-map',
+  devtool: 'eval-cheap-module-source-map',
   devServer: {
-    before: (app, server) => {
-      app.use(webpackDevServerWaitpage(server, { theme: 'dark' }));
-    },
-    contentBase: path.resolve(ROOT_DIR, 'src'),
     port: process.env.PORT || 8080,
     historyApiFallback: true,
     hot: true,
     compress: true,
-    open: true,
-    overlay: true,
-    clientLogLevel: 'error',
-    quiet: true
+    client: {
+      logging: 'error',
+      overlay: true
+    }
   },
-  plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-    new FriendlyErrorsPlugin(),
-    new HardSourcePlugin(),
-    new WatchMissingNodeModulesPlugin(path.resolve(ROOT_DIR, 'node_modules'))
-  ],
+  stats: 'none',
+  plugins: [new FriendlyErrorsPlugin()],
   resolve: {
     alias: {
       'react-dom': '@hot-loader/react-dom'
     }
   },
   optimization: {
-    noEmitOnErrors: true,
-    namedModules: true,
+    chunkIds: 'named',
+    emitOnErrors: false,
+    moduleIds: 'named',
     runtimeChunk: true
   },
   output: {

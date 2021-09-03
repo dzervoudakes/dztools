@@ -3,8 +3,7 @@ const path = require('path');
 const webpack = require('webpack');
 const { CleanWebpackPlugin: CleanPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const TerserPlugin = require('terser-webpack-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 const ROOT_DIR = fs.realpathSync(process.cwd());
@@ -12,10 +11,10 @@ const BUILD_DIR = path.resolve(ROOT_DIR, 'dist');
 
 const plugins = [
   new CleanPlugin(),
+  new CssMinimizerPlugin(),
   new MiniCssExtractPlugin({
     filename: path.join('css', '[name].[chunkhash].min.css')
   }),
-  new OptimizeCssAssetsPlugin(),
   new webpack.optimize.AggressiveMergingPlugin()
 ];
 
@@ -31,32 +30,29 @@ module.exports = {
   },
   plugins,
   optimization: {
-    minimizer: [
-      new TerserPlugin({
-        cache: true,
-        extractComments: true,
-        parallel: true,
-        sourceMap: true
-      })
-    ],
+    minimize: true,
     splitChunks: {
       cacheGroups: {
         commons: {
-          test: /node_modules/,
-          name: 'vendor',
+          test: /[\\/]node_modules[\\/]/,
+          name: (module, chunks, cacheGroupKey) => {
+            const moduleFileName = module
+              .identifier()
+              .split('/')
+              .reduceRight((item) => item);
+            const allChunksNames = chunks.map((item) => item.name).join('~');
+            return `${cacheGroupKey}-${allChunksNames}-${moduleFileName}`;
+          },
           chunks: 'all'
         }
       }
     },
-    runtimeChunk: {
-      name: 'manifest'
-    }
+    runtimeChunk: true
   },
   output: {
     path: BUILD_DIR,
     publicPath: '/',
     filename: path.join('js', '[name].[chunkhash].min.js'),
-    sourceMapFilename: path.join('js', '[name].[chunkhash].min.js.map'),
     chunkFilename: path.join('js', '[name].[chunkhash].min.js')
   }
 };

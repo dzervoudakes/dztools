@@ -30,7 +30,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js|jsx|mjs)$/,
+        test: /\.(js|jsx)$/,
         include: APP_DIR,
         loader: require.resolve('babel-loader'),
         options: {
@@ -38,7 +38,7 @@ module.exports = {
         }
       },
       {
-        test: /\.(js|jsx|mjs)$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         loader: require.resolve('eslint-loader'),
         enforce: 'pre'
@@ -61,9 +61,9 @@ module.exports = {
             loader: require.resolve('css-loader'),
             options: {
               url: false,
-              localsConvention: 'camelCase',
               importLoaders: 2,
               modules: {
+                exportLocalsConvention: 'camelCase',
                 localIdentName: '[name]__[local]--[hash:base64:5]'
               }
             }
@@ -74,26 +74,23 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
-        loader: require.resolve('url-loader'),
-        options: {
-          limit: 10000,
-          name: path.join('images', '[name].[hash:7].[ext]')
+        type: 'asset/resource',
+        generator: {
+          filename: path.join('images', '[name].[hash:7][ext]')
         }
       },
       {
         test: /\.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/,
-        loader: require.resolve('url-loader'),
-        options: {
-          limit: 10000,
-          name: path.join('media', '[name].[hash:7].[ext]')
+        type: 'asset/resource',
+        generator: {
+          filename: path.join('media', '[name].[hash:7][ext]')
         }
       },
       {
         test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
-        loader: require.resolve('url-loader'),
-        options: {
-          limit: 10000,
-          name: path.join('fonts', '[name].[hash:7].[ext]')
+        type: 'asset/resource',
+        generator: {
+          filename: path.join('fonts', '[name].[hash:7][ext]')
         }
       }
     ]
@@ -115,10 +112,9 @@ module.exports = {
     })
   ],
   resolve: {
-    extensions: ['.js', '.jsx', '.mjs', '.json', '.scss', '.css'],
+    extensions: ['.js', '.jsx', '.json', '.scss', '.css'],
     alias: {
-      '@src': APP_DIR,
-      '@shared': path.resolve(APP_DIR, 'components', 'shared')
+      '@src': APP_DIR
     }
   }
 };

@@ -17,7 +17,7 @@ To install the package:
 If peer dependencies are needed, run the following:
 
 ```sh
-[npm i -D || yarn add -D] @hot-loader/react-dom webpack webpack-cli webpack-dev-server
+[npm i -D || yarn add -D] @hot-loader/react-dom react webpack webpack-cli webpack-dev-server
 ```
 
 **Note:** The version of `@hot-loader/react-dom` must match your local version of `react` and `react-dom`.

@@ -1,5 +1,25 @@
 # @dztools/webpack-config-react-typescript | Changelog
 
+## v2.0.0
+
+**Release Date:** 2021-09-03
+
+- Migrate Webpack `v4` to `v5`.
+  - **Note:** Given changes to Webpack's default bundling process, apps may no longer work in IE11 unless if your local `browserslist` specifies support for it.
+  - It has been decided to no longer actively verify support for IE, for any version, moving forward.
+  - More on this here: [official documentation](https://webpack.js.org/migrate/5/#need-to-support-an-older-browser-like-ie-11)
+- Drop support for `*.mjs` files.
+- Remove `@shared` import alias.
+- Swap `optimize-css-assets-webpack-plugin` with `css-minimizer-webpack-plugin`.
+- Remove `hard-source-webpack-plugin`, as caching comes out of the box with Webpack `v5`.
+- Remove `terser-webpack-plugin`, as this comes out of the box with Webpack `v5`.
+- Remove `file-loader` and `url-loader` in favor of built-in `asset/resource` type.
+- Remove `react-dev-utils`, as it was adding bloat and vulnerabilities with little value.
+  - **Note:** When installing new packages, you will now need to restart the dev server prior to using them.
+- Remove `webpack-dev-server-waitpage` due to incompatibility with Webpack `v5` and low usage/weekly downloads.
+- Disable dev server `open: true` property.
+  - **Note:** If you wish to re-enable this behavior, add the `--open` flag to your local `webpack serve` command.
+
 ## v1.4.1
 
 **Release Date:** 2021-02-02
