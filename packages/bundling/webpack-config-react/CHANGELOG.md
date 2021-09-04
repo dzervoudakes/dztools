@@ -1,5 +1,11 @@
 # @dztools/webpack-config-react | Changelog
 
+## v2.1.1
+
+**Release Date:** 2021-09-04
+
+- Ensure wait page dependency is installed out of the box.
+
 ## v2.1.0
 
 **Release Date:** 2021-09-04
