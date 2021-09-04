@@ -1,5 +1,12 @@
 # @dztools/eslint-config-base | Changelog
 
+## v1.2.0
+
+**Release Date:** 2020-09-04
+
+- Update dependencies.
+- Switch parser from `babel-eslint` (deprecated) to `@babel/eslint-parser`.
+
 ## v1.1.1
 
 **Release Date:** 2020-02-13

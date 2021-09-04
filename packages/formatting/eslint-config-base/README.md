@@ -17,7 +17,7 @@ To install the package:
 If peer dependencies are needed, run the following:
 
 ```sh
-[npm i -D || yarn add -D] babel-eslint eslint eslint-config-airbnb-base eslint-config-prettier eslint-plugin-import eslint-plugin-prettier prettier
+[npm i -D || yarn add -D] @babel/eslint-parser eslint eslint-config-airbnb-base eslint-config-prettier eslint-plugin-import eslint-plugin-prettier prettier
 ```
 
 ## Usage
