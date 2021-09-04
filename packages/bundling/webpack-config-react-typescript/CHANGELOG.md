@@ -1,5 +1,13 @@
 # @dztools/webpack-config-react-typescript | Changelog
 
+## v2.1.0
+
+**Release Date:** 2021-09-04
+
+- Reintroduce `webpack-dev-server-waitpage` with default browser open behavior.
+  - **Note:** Changelog notes from `v2.0.0` inaccurately suggested incompatibility with Webpack `v5`. It turned out to be an issue with symlinks during testing.
+  - If you wish to disable browser `open: true` functionality, add the `--no-open` flag to your local `webpack serve` command.
+
 ## v2.0.2
 
 **Release Date:** 2021-09-04
