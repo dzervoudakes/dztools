@@ -3,6 +3,7 @@ const path = require('path');
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
+const ESLintPlugin = require('eslint-webpack-plugin');
 const HtmlPlugin = require('html-webpack-plugin');
 
 const ROOT_DIR = fs.realpathSync(process.cwd());
@@ -36,12 +37,6 @@ module.exports = {
         options: {
           cacheDirectory: true
         }
-      },
-      {
-        test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        loader: require.resolve('eslint-loader'),
-        enforce: 'pre'
       },
       {
         test: /\.(css|scss)$/,
@@ -100,6 +95,9 @@ module.exports = {
       NODE_ENV: process.env.NODE_ENV || 'development'
     }),
     new CaseSensitivePathsPlugin(),
+    new ESLintPlugin({
+      extensions: ['.js', '.jsx']
+    }),
     new HtmlPlugin({
       favicon: path.resolve(PUBLIC_DIR, 'favicon.ico'),
       filename: 'index.html',

@@ -1,5 +1,11 @@
 # @dztools/webpack-config-react-typescript | Changelog
 
+## v2.0.2
+
+**Release Date:** 2021-09-04
+
+- Display build progress in development.
+
 ## v2.0.1
 
 **Release Date:** 2021-09-03

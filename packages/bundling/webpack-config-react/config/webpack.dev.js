@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const webpack = require('webpack');
 const FriendlyErrorsPlugin = require('@soda/friendly-errors-webpack-plugin');
 
 const ROOT_DIR = fs.realpathSync(process.cwd());
@@ -22,7 +23,12 @@ module.exports = {
     }
   },
   stats: 'none',
-  plugins: [new FriendlyErrorsPlugin()],
+  plugins: [
+    new FriendlyErrorsPlugin(),
+    new webpack.ProgressPlugin({
+      percentBy: 'entries'
+    })
+  ],
   resolve: {
     alias: {
       'react-dom': '@hot-loader/react-dom'

@@ -1,5 +1,12 @@
 # @dztools/webpack-config-react | Changelog
 
+## v2.0.2
+
+**Release Date:** 2021-09-04
+
+- Switch from `eslint-loader` (deprecated) to `eslint-webpack-plugin`.
+- Display build progress in development.
+
 ## v2.0.1
 
 **Release Date:** 2021-09-03
