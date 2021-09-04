@@ -15,7 +15,10 @@ module.exports = {
     compress: true,
     client: {
       logging: 'error',
-      overlay: true
+      overlay: {
+        errors: true,
+        warnings: false
+      }
     }
   },
   stats: 'none',

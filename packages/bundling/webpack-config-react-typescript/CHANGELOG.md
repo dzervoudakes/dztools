@@ -1,5 +1,11 @@
 # @dztools/webpack-config-react-typescript | Changelog
 
+## v2.0.1
+
+**Release Date:** 2021-09-03
+
+- Prevent overlay on warnings.
+
 ## v2.0.0
 
 **Release Date:** 2021-09-03
