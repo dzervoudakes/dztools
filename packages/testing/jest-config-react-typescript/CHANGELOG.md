@@ -1,5 +1,11 @@
 # @dztools/jest-config-react-typescript | Changelog
 
+## v1.5.0
+
+**Release Date:** 2021-09-09
+
+- Disable type checking for improved performance.
+
 ## v1.4.0
 
 **Release Date:** 2021-08-30

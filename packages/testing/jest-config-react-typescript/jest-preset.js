@@ -32,5 +32,10 @@ module.exports = {
     '^.+\\.(png|jpg|jpeg|git|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
       require.resolve('./utils/file-transform.js')
   },
-  moduleDirectories: ['node_modules']
+  moduleDirectories: ['node_modules'],
+  globals: {
+    'ts-jest': {
+      isolatedModules: true // disable type checking for improved performance
+    }
+  }
 };
