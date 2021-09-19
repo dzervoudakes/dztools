@@ -32,20 +32,8 @@ module.exports = {
   optimization: {
     minimize: true,
     splitChunks: {
-      cacheGroups: {
-        commons: {
-          test: /[\\/]node_modules[\\/]/,
-          name: (module, chunks, cacheGroupKey) => {
-            const moduleFileName = module
-              .identifier()
-              .split('/')
-              .reduceRight((item) => item);
-            const allChunksNames = chunks.map((item) => item.name).join('~');
-            return `${cacheGroupKey}-${allChunksNames}-${moduleFileName}`;
-          },
-          chunks: 'all'
-        }
-      }
+      chunks: 'all',
+      name: false
     },
     runtimeChunk: true
   },

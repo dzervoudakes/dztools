@@ -1,5 +1,11 @@
 # @dztools/webpack-config-react-typescript | Changelog
 
+## v2.2.0
+
+**Release Date:** 2021-09-19
+
+- Update chunk splitting for simplicity and performance.
+
 ## v2.1.0
 
 **Release Date:** 2021-09-04
