@@ -8,10 +8,26 @@ module.exports = {
   plugins: [
     require.resolve('stylelint-a11y'),
     require.resolve('stylelint-order'),
-    require.resolve('stylelint-prettier')
+    require.resolve('stylelint-prettier'),
+    require.resolve('stylelint-scss')
   ],
   rules: {
     // standard rules
+    'at-rule-empty-line-before': [
+      'always',
+      {
+        ignoreAtRules: ['else'],
+        ignore: ['after-comment', 'blockless-after-same-name-blockless'],
+        except: 'first-nested'
+      }
+    ],
+    'at-rule-no-unknown': null,
+    'block-closing-brace-newline-after': [
+      'always',
+      {
+        ignoreAtRules: ['if', 'else']
+      }
+    ],
     'declaration-block-no-duplicate-properties': true,
     'declaration-block-no-redundant-longhand-properties': true,
     indentation: 2,
@@ -32,6 +48,9 @@ module.exports = {
     'a11y/no-obsolete-element': true,
 
     // ordering
-    'order/properties-alphabetical-order': true
+    'order/properties-alphabetical-order': true,
+
+    // scss
+    'scss/at-rule-no-unknown': true
   }
 };

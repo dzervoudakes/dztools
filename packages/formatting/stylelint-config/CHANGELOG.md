@@ -1,5 +1,11 @@
 # @dztools/stylelint-config | Changelog
 
+## v1.4.0
+
+**Release Date:** 2021-09-22
+
+- Update `at-rule` settings and install `stylelint-scss`.
+
 ## v1.3.0
 
 **Release Date:** 2021-08-30
