@@ -1,5 +1,11 @@
 # @dztools/stylelint-config | Changelog
 
+## v1.5.0
+
+**Release Date:** 2021-09-22
+
+- Enforce lowercase and shorthand color hex values.
+
 ## v1.4.0
 
 **Release Date:** 2021-09-22

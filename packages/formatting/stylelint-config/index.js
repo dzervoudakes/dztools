@@ -28,6 +28,8 @@ module.exports = {
         ignoreAtRules: ['if', 'else']
       }
     ],
+    'color-hex-case': 'lower',
+    'color-hex-length': 'short',
     'declaration-block-no-duplicate-properties': true,
     'declaration-block-no-redundant-longhand-properties': true,
     indentation: 2,
