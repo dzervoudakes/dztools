@@ -1,6 +1,5 @@
 const fs = require('fs');
 const path = require('path');
-const webpack = require('webpack');
 const webpackDevServerWaitpage = require('webpack-dev-server-waitpage');
 const FriendlyErrorsPlugin = require('@soda/friendly-errors-webpack-plugin');
 
@@ -31,15 +30,7 @@ module.exports = {
     }
   },
   stats: 'none',
-  plugins: [
-    new FriendlyErrorsPlugin(),
-    // Note for testing: the progress plugin will not work using 'npm link'.
-    // This is due to webpack-dev-server pointing to the local instance
-    // of webpack when using symlinks to test new features.
-    new webpack.ProgressPlugin({
-      percentBy: 'entries'
-    })
-  ],
+  plugins: [new FriendlyErrorsPlugin()],
   resolve: {
     alias: {
       'react-dom': '@hot-loader/react-dom'

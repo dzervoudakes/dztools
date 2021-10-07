@@ -1,5 +1,12 @@
 # @dztools/webpack-config-react-typescript | Changelog
 
+## v2.3.0
+
+**Release Date:** 2021-10-06
+
+- Remove progress plugin from development builds.
+- Update package dependencies.
+
 ## v2.2.0
 
 **Release Date:** 2021-09-19
