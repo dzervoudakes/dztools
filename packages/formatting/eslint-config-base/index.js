@@ -43,8 +43,12 @@ module.exports = {
     'import/order': [
       ERROR,
       {
+        alphabetize: {
+          order: 'asc',
+          caseInsensitive: false
+        },
         groups: ['builtin', 'external', 'internal', ['parent', 'sibling'], 'index'],
-        'newlines-between': 'never'
+        'newlines-between': 'always'
       }
     ]
   }

@@ -1,5 +1,12 @@
 # @dztools/eslint-config-typescript | Changelog
 
+## v1.2.0
+
+**Release Date:** 2020-11-08
+
+- Alphabetize imports.
+- Enforce new lines between import groups.
+
 ## v1.1.2
 
 **Release Date:** 2020-02-13

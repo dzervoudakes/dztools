@@ -1,5 +1,12 @@
 # @dztools/eslint-config-react | Changelog
 
+## v1.3.0
+
+**Release Date:** 2020-11-08
+
+- Alphabetize imports.
+- Enforce new lines between import groups.
+
 ## v1.2.0
 
 **Release Date:** 2020-09-04

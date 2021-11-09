@@ -1,5 +1,12 @@
 # @dztools/eslint-config-react-typescript | Changelog
 
+## v1.2.0
+
+**Release Date:** 2020-11-08
+
+- Alphabetize imports.
+- Enforce new lines between import groups.
+
 ## v1.1.1
 
 **Release Date:** 2021-06-13
