@@ -1,10 +1,10 @@
 module.exports = {
+  customSyntax: require.resolve('postcss-scss'),
   extends: [
     require.resolve('stylelint-a11y/recommended'),
     require.resolve('stylelint-config-standard'),
     require.resolve('stylelint-prettier/recommended')
   ],
-  syntax: 'scss',
   plugins: [
     require.resolve('stylelint-a11y'),
     require.resolve('stylelint-order'),

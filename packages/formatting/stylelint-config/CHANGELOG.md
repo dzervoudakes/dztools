@@ -1,5 +1,12 @@
 # @dztools/stylelint-config | Changelog
 
+## v1.6.0
+
+**Release Date:** 2021-12-03
+
+- Update dependencies.
+- Replace `syntax: scss` config with `customSyntax: postcss-scss`.
+
 ## v1.5.0
 
 **Release Date:** 2021-09-22
