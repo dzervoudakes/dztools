@@ -1,5 +1,11 @@
 # @dztools/eslint-config-typescript | Changelog
 
+## v1.3.1
+
+**Release Date:** 2020-12-03
+
+- Disable `import/no-import-module-exports` rule.
+
 ## v1.3.0
 
 **Release Date:** 2020-12-03

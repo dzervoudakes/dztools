@@ -39,6 +39,7 @@ module.exports = {
     // import rules
     'import/extensions': [ERROR, 'always', { js: 'never' }],
     'import/no-dynamic-require': OFF,
+    'import/no-import-module-exports': OFF,
     'import/no-unresolved': ERROR,
     'import/order': [
       ERROR,

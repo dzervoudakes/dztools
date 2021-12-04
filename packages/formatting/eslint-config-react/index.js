@@ -67,6 +67,7 @@ module.exports = {
       }
     ],
     'import/no-dynamic-require': OFF,
+    'import/no-import-module-exports': OFF,
     'import/no-unresolved': ERROR,
     'import/order': [
       ERROR,
@@ -90,6 +91,7 @@ module.exports = {
 
     // React rules
     'react/forbid-prop-types': ERROR,
+    'react/function-component-definition': OFF,
     'react/jsx-closing-bracket-location': [ERROR, 'line-aligned'],
     'react/jsx-curly-brace-presence': [ERROR, 'never'],
     'react/jsx-curly-spacing': [ERROR, { when: 'never', children: true }],

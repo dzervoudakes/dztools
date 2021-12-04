@@ -1,5 +1,12 @@
 # @dztools/eslint-config-react | Changelog
 
+## v1.4.1
+
+**Release Date:** 2020-12-03
+
+- Disable `import/no-import-module-exports` rule.
+- Disable `react/function-component-definition` rule.
+
 ## v1.4.0
 
 **Release Date:** 2020-12-03

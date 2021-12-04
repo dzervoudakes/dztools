@@ -1,5 +1,12 @@
 # @dztools/eslint-config-react-typescript | Changelog
 
+## v1.3.1
+
+**Release Date:** 2020-12-03
+
+- Disable `import/no-import-module-exports` rule.
+- Disable `react/function-component-definition` rule.
+
 ## v1.3.0
 
 **Release Date:** 2020-12-03
