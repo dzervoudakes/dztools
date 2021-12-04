@@ -1,5 +1,11 @@
 # @dztools/eslint-config-react-typescript | Changelog
 
+## v1.3.0
+
+**Release Date:** 2020-12-03
+
+- Update dependencies.
+
 ## v1.2.0
 
 **Release Date:** 2020-11-08
