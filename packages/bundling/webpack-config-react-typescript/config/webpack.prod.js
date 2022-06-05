@@ -13,7 +13,7 @@ const plugins = [
   new CleanPlugin(),
   new CssMinimizerPlugin(),
   new MiniCssExtractPlugin({
-    filename: path.join('css', '[name].[chunkhash].min.css')
+    filename: path.join('css', '[name].[contenthash].min.css')
   }),
   new webpack.optimize.AggressiveMergingPlugin()
 ];

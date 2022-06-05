@@ -1,5 +1,11 @@
 # @dztools/webpack-config-react-typescript | Changelog
 
+## v2.3.1
+
+**Release Date:** 2022-06-05
+
+- Use `contenthash` instead of `chunkhash` for extracted CSS caching.
+
 ## v2.3.0
 
 **Release Date:** 2021-10-06

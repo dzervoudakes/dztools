@@ -1,6 +1,6 @@
 {
   "name": "@dztools/webpack-config-react",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "description": "Webpack base, dev, and prod configurations for React + JavaScript templates.",
   "repository": {
     "type": "git",
