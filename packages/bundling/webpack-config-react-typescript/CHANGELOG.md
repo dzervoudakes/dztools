@@ -1,5 +1,12 @@
 # @dztools/webpack-config-react-typescript | Changelog
 
+## v2.4.0
+
+**Release Date:** 2022-06-06
+
+- Migrate `onBeforeSetupMiddleware` to `setupMiddlewares` in dev server config.
+- Update peer dependencies.
+
 ## v2.3.1
 
 **Release Date:** 2022-06-05

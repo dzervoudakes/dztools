@@ -13,8 +13,9 @@ module.exports = {
     // Note for testing: the wait page middleware will not work using 'npm link'.
     // This is due to webpack-dev-server pointing to the local instance
     // of webpack when using symlinks to test new features.
-    onBeforeSetupMiddleware: (server) => {
+    setupMiddlewares: (middlewares, server) => {
       server.app.use(webpackDevServerWaitpage(server, { theme: 'dark' }));
+      return middlewares;
     },
     open: true,
     port: process.env.PORT || 8080,
